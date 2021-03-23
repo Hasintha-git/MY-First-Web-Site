@@ -1,0 +1,1467 @@
+body {
+    background: #1e1e1e;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/Main page img/back new one.png");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    animation: back 10s linear infinite;
+    background-size: cover;
+    background-position: center;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,white);
+    border-radius: 6px;
+ }
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#00c6ff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar {
+    background: #1e1e1e;
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: sans-serif;
+    z-index: 4;
+    animation: back 10s linear infinite;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.3);
+
+}
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu {
+    color: white;
+    list-style: none;
+    display: inline;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    right: 50px;
+}
+.navbar .logo {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+}
+.navbar .logo span {
+    color: gray;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+
+}
+.navbar .menu li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: gray;
+}
+.home {
+    height: 300px;
+    /*width: 200px;*/
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    top: 100px;
+    z-index: 2;
+    right: 0;
+    left: 0;
+
+
+}
+.home .welcome  {
+
+    font-size: 80px;
+    font-family: "DilleniaUPC";
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: white;
+    position: absolute;
+
+    text-shadow: 0 12px 17px rgba(2,0,2,0.5);
+}
+
+
+.home .welcome span:before {
+    content: '';
+    animation: animate5 infinite 7s;
+}
+
+@keyframes animate5 {
+    0% {
+        content: 'Hey! ';
+
+        font-size: 80px;
+    }
+    50% {
+        content: 'Welcome';
+        font-size: 80px;
+    }
+    100% {
+        content: 'Hey! Welcome';
+
+        transition-duration: 0.5s;
+
+    }
+}
+
+
+.home h2 {
+    font-size: 24px;
+    font-family: "UD Digi Kyokasho NK-B";
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 310px;
+    animation: name 5s linear infinite;
+    z-index: 2;
+}
+@keyframes name {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 2;
+    }
+}
+
+
+.home h3 {
+
+    font-size: 44px;
+    font-family: "Perpetua";
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: white;
+    top: 350px;
+    position: absolute;
+    z-index: 3;
+}
+
+ .job span:before {
+    content: '';
+    animation: animate3 infinite 10s;
+}
+@keyframes animate3 {
+    0%{
+        content: 'Developer';
+    }
+    20%{
+        content: 'Youtuber';
+        color: red;
+    }
+    40%{
+        content: 'Photographer';
+        color: yellow;
+    }
+    60%{
+        content: 'Video Editor';
+        color: greenyellow;
+
+    }
+    80%{
+        content: 'Freelancer';
+        color:  black;
+    }
+    100%{
+        content: 'Designer';
+        color: cornflowerblue;
+    }
+}
+.home img {
+    width: 250px;
+    height: 250px;
+
+    margin: 0px;
+}
+.heremore {
+    color: white;
+    font-family: "Calibri Light";
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    background: red;
+    padding: 5px;
+    top: 420px;
+    position: absolute;
+    border-radius: 50px;
+    margin: 50px;
+    z-index: 3;
+
+
+}
+
+.home a:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 5px white,
+                0 0 25px white,
+                0 0 50px white,
+                0 0 200px white;
+    z-index: 3;
+
+}
+
+.rotate {
+
+}
+
+.rotate img {
+    width: 180px;
+    height: 180px;
+    border-radius:180px ;
+    box-shadow: 0 0 5px white,
+    0 0 25px white,
+    0 0 50px white,
+    0 0 200px white;
+    top: 200px;
+    left:0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    animation: rotate 5s linear infinite;
+
+
+}
+@keyframes rotate {
+    100% {
+        transform: rotateY(360deg);
+
+    }
+    50%{
+
+        box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+        transition-duration: 2s;
+    }
+
+    75%{
+
+        box-shadow: 0 12px 17px rgba(2,0,2,1);
+        transition-duration: 0.5s;
+    }
+
+
+}
+/*.social {*/
+    /*list-style: none;*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*justify-content: space-around;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+/*}*/
+/*.fa fa-github {*/
+
+    /*position: absolute;*/
+    /*top: 360px;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+
+    /*margin: auto;*/
+/*}*/
+.home .social {
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 3;
+
+}
+.home .social li {
+    list-style: none;
+}
+.home .social li a {
+    position: relative;
+    width: 35px;
+    height: 35px;
+
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 4px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    background: linear-gradient(0deg,#ddd,#fff);
+    transition: .5s;
+}
+.home .social li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,1);
+}
+.home .social li a .fa {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg,#fff,#ddd);
+    border-radius: 50%;
+    line-height: 27px;
+    font-size: 24px;
+   color: #262626;
+    transition: 5s;
+    padding: 1px;
+
+}
+.home .social li:nth-child(1) a :hover .fa {
+    color:#3b5998 ;
+}
+.home .social li:nth-child(2) a :hover .fa {
+    color:#3b5998 ;
+}
+.home .social li:nth-child(3) a :hover .fa {
+    color:#3b5998 ;
+}
+.home .social li:nth-child(4) a :hover .fa {
+    color:#3b5998 ;
+}
+
+
+
+
+ /*Page number 2*/
+
+.page2 {
+    /*background-image: url("../img/Main page img/back new one.png");*/
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+
+}
+.title {
+
+    position: absolute;
+    height: 100px;
+    width: 100%;
+
+}
+.title h3 {
+    color: gray;
+    position: absolute;
+    top: 65px;
+    display: flex;
+    align-items: center;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    margin: auto;
+    font-size: 16px;
+}
+.title h2 {
+    color: white;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    margin: auto;
+    font-size: 32px;
+}
+.info {
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    top: 140px;
+    left: 50px;
+    border-radius: 20px;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+
+}
+.pic {
+
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    top: 140px;
+    right: 220px;
+    box-shadow: 0 12px 17px rgba(2,1,2,0.5);
+
+}
+.picdet {
+
+    width: 600px;
+    height: 180px;
+    position: absolute;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    bottom: 45px;
+    right: 50px;
+    border-radius: 20px;
+}
+.page2 .pic img{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 100%;
+
+}
+.page2 .info h2 {
+
+    padding: 15px;
+    top: 30px;
+    padding-left: 50px;
+    color: gray;
+}
+.page2 .info h1 {
+    padding-left: 270px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: white;
+}
+/*.page2 .info img {*/
+    /*right: 40px;*/
+    /*top: 20px;*/
+    /*position: absolute;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+/*}*/
+.page2 .picdet h2{
+    color: gray;
+    align-items: center;
+    padding-left: 37%;
+    margin: 10px;
+}
+.page2 .picdet a {
+    position: absolute;
+    color: gray;
+    align-items: center;
+    left:42%;
+    background:  #171717;
+    padding: 10px;
+    border-radius: 50px;
+}
+.page2  a :hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 5px white,
+    0 0 25px white,
+    0 0 50px white,
+    0 0 200px white;
+    z-index: 3;
+
+}
+.page2 .picdet h3{
+    color: gray;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    left: 40%;
+    font-size: 16px;
+    margin: auto;
+}
+
+.picdet .social2 {
+    position: absolute;
+    top: 140px;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 3;
+
+}
+.picdet .social2 li {
+    list-style: none;
+}
+.picdet .social2 li a {
+    position: relative;
+    width: 35px;
+    height: 35px;
+
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 4px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    background: linear-gradient(0deg,#ddd,#fff);
+    transition: .5s;
+}
+.picdet .social2 li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,1);
+}
+.picdet .social2 li a .fa {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg,#fff,#ddd);
+    border-radius: 50%;
+    line-height: 27px;
+    font-size: 24px;
+    color: #262626;
+    transition: 5s;
+    padding: 1px;
+
+}
+.picdet .social2 li:nth-child(1) a :hover .fa {
+    color:#3b5998 ;
+}
+.picdet .social2 li:nth-child(2) a :hover .fa {
+    color:#3b5998 ;
+}
+.picdet .social2 li:nth-child(3) a :hover .fa {
+    color:#3b5998 ;
+}
+.picdet .social2 li:nth-child(4) a :hover .fa {
+    color:#3b5998 ;
+}
+
+
+
+
+
+
+
+
+/*page3 css----------------------------------------------*/
+.page3 {
+    top: 200%;
+    width: 100%;
+    height: 100%;
+    /*background-image: url("../img/Main page img/back new one.png");*/
+    position: absolute;
+}
+.title {
+    top: 10px;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+
+}
+.title h1 {
+    color: White;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    margin: auto;
+    font-size: 32px;
+}
+.page3 .page3body {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 140px;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+}
+.page3 .page3body .other {
+    width: 40%;
+    height: 350px;
+    position: absolute;
+    background: transparent;
+    margin: 20px;
+    margin-left: 40px;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+}
+.page3 .page3body .skill {
+    width: 50%;
+    height: 350px;
+    position: absolute;
+    background: transparent;
+    margin: 20px;
+    margin-right: 40px;
+    right: 0;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+
+}
+.page3 .page3body .skill .probar {
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    padding: 0px 10px 18px;
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s;
+    width: 90%;
+    margin-left: 10px;
+
+}
+.page3 .page3body .skill .probar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+
+    z-index: 10;
+}
+.page3 .page3body .skill .probar .name {
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+    margin-top: 5px;
+
+}
+.page3 .page3body .skill .probar .value {
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.page3 .page3body .skill .probar .bar2 {
+    position: relative;
+    width: calc(100% - 150px);
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+.page3 .page3body .skill .probar .bar2 .progess{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,white,skyblue,blue);
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards;
+
+
+}
+@keyframes animate {
+    from{
+        width: 0;
+    }
+
+}
+
+
+.page3 .page3body .skill .probar:nth-child(3) .bar2 .progess {
+    background: linear-gradient(45deg,#1fe6ff,#673AB7);
+}
+.page3 .page3body .skill .probar:nth-child(2) .bar2 .progess {
+    background: linear-gradient(45deg,#3bc0ff,#33ff00);
+}
+.page3 .page3body .skill .probar:nth-child(4) .bar2 .progess {
+    background: linear-gradient(45deg,#ffee54,#ff00ca);
+}
+.page3 .page3body .skill .probar:nth-child(5) .bar2 .progess {
+    background: linear-gradient(45deg,#22ffde,#2196F3);
+}
+.page3 .page3body .skill .probar:nth-child(6) .bar2 .progess {
+    background: linear-gradient(45deg,#33ff00,#ffee54);
+}
+.skill:hover .probar {
+    opacity: 0.08;
+}
+.skill .probar:hover {
+    opacity: 1;
+}
+
+
+.page3 .other p{
+    color: gray;
+    margin: 20px;
+}
+.footer {
+    top: 560px;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+
+}
+.footer .social3 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 3;
+
+}
+.footer .social3 li {
+    list-style: none;
+}
+.footer .social3 li a {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    margin: 0 50px;
+    border-radius: 50%;
+    padding: 4px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    background: linear-gradient(0deg,#ddd,#fff);
+    transition: .5s;
+}
+.footer .social3 li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,1);
+}
+.footer .social3 li a .fa {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg,#fff,#ddd);
+    border-radius: 50%;
+    line-height:27px;
+    font-size: 24px;
+    color: #262626;
+    transition: 5s;
+    padding: 1px;
+
+}
+.footer .social3 li:nth-child(1) a :hover .fa {
+    color:#3b5998 ;
+}
+.footer .social3 li:nth-child(2) a :hover .fa {
+    color:#3b5998 ;
+}
+.footer .social3 li:nth-child(3) a :hover .fa {
+    color:#3b5998 ;
+}
+.footer .social3 li:nth-child(4) a :hover .fa {
+    color:#3b5998 ;
+}
+
+
+
+
+
+
+/*page 4 started ------------------------------------------------*/
+.page4 {
+    top: 300%;
+    width: 100%;
+    height: 100%;
+    /*background-image: url("../img/Main page img/back new one.png");*/
+    position: absolute;
+}
+.edu {
+    top: 110px;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+}
+.edu .uni {
+    height: calc(90%/2);
+    width: calc(80%/2);
+    position: absolute;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    margin: 20px;
+    border-radius: 12px;
+    background-size: cover;
+}
+.edu .course {
+    height: calc(90%/2);
+    width: calc(80%/2);
+    right: 0;
+    position: absolute;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    margin: 20px;
+    background-size: cover;
+}
+.edu .hight {
+    height: calc(90%/2);
+    width: calc(80%/2);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    margin:20px;
+    background-size: cover;
+}
+.edu .primary {
+    height: calc(90%/2);
+    width: calc(80%/2);
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    margin: 10px;
+    background-size: cover;
+}
+.edu .rule {
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+}
+.edu img {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    background-size: cover;
+}
+.edu .content {
+    font-family: "Candara ";
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(45deg,#03a9f4,rgba(3,169,244,0.5));
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    opacity: 0;
+
+}
+.edu .content:hover{
+opacity: 1;
+    border-radius: 12px;
+}
+
+
+/*page 5 started********************************/
+
+.page5 {
+    top: 400%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background-image: url("../img/Main page img/back new one.png");*/
+    position: absolute;
+    overflow: hidden;
+}
+.page5 .mainbody {
+    max-width: 100%;
+    height: 500px;
+    background: transparent;
+    position: relative;
+    top: 120px;
+
+
+}
+
+.page5 .swiper-slide {
+
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    min-height: 350px;
+    background:transparent;
+    padding: 20px;
+    display: inline-block;
+
+}
+.page5 .swiper-container-3d .swiper-slide-shadow-left,
+.page5 .swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+.page5 .mainbody .card {
+    position: relative;
+    width: 100%;
+
+    margin: 0 auto;
+    box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    padding: 60px 40px;
+    text-align: center;
+    overflow: hidden;
+    background: transparent;
+
+}
+.page5 .mainbody .card .layer {
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(hotpink,#00ccff);
+    z-index: 1;
+    transition: 0.5s;
+}
+.page5 .mainbody .card:hover .layer{
+    top: 0;
+
+}
+.page5 .mainbody .card .content {
+    position: relative;
+    z-index: 2;
+
+}
+.page5 .mainbody .card .content a {
+    font-size: 18px;
+    line-height: 24px;
+
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #fff;
+    background: blue;
+    border-radius: 20px;
+
+}
+.page5 .mainbody .card .content a:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 5px white,
+    0 0 25px white,
+    0 0 50px white,
+    0 0 200px white;
+    z-index: 3;
+}
+
+
+.page5 .mainbody .card .content img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin: 50px;
+
+    animation: animatelogo 5s linear infinite;
+    box-shadow: 0 12px 17px rgba(2,0,2,1);
+}
+@keyframes animatelogo {
+    0%,100% {
+
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
+.page5 .mainbody .card .content h2 {
+    font-size: 18px;
+    color: #fff;
+
+}
+
+
+/*page 6 started ********************************************/
+
+.page6 {
+    top: 500%;
+    width: 100%;
+    height: 250px;
+    background: black;
+    position: absolute;
+}
+
+.page6 .call {
+    width: calc(100%/4);
+    height: 230px;
+    position: absolute;
+
+    left: 0;
+    margin: 10px;
+
+}
+.page6 .call img {
+    left: 20px;
+    top: 80px;
+
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+.page6 .call h1 {
+    left: 120px;
+    top: 50px;
+    color: white;
+    align-items: center;
+    font-size: 36px;
+    position: absolute;
+}
+.page6 .call h2 {
+    left: 120px;
+    top: 130px;
+    color: white;
+    align-items: center;
+    font-size: 24px;
+    position: absolute;
+}
+
+
+.page6 .myname {
+    width: calc(100%/2);
+    height: 230px;
+    position: absolute;
+
+    left: calc(100%/4);
+    margin: 10px;
+}
+.page6 .myname img {
+
+    top: 120px;
+    left: 300px;
+
+    width:80px;
+    height:80px;
+    position: absolute;
+}
+.page6 .myname h1 {
+    left: 250px;
+    top: 20px;
+    color: red;
+    align-items: center;
+    font-size: 24px;
+    position: absolute;
+}
+
+.page6 .myname h2 {
+    left: 305px;
+    top: 70px;
+    color: gray;
+    align-items: center;
+    font-size: 16px;
+    position: absolute;
+}
+.page6 .myname h3 {
+    left: 240px;
+    top: 190px;
+    color: red;
+    align-items: center;
+    font-size: 24px;
+    position: absolute;
+}
+.page6 .email {
+    width: calc(100%/4);
+    height: 230px;
+    position: absolute;
+
+    right: 0;
+    margin: 10px;
+
+}
+.page6 .email h1 {
+    left: 110px;
+    top: 50px;
+    color: white;
+    align-items: center;
+    font-size: 36px;
+    position: absolute;
+}
+.page6 .email h2 {
+    left: 110px;
+    top: 130px;
+    color: white;
+    align-items: center;
+    font-size: 22px;
+    position: absolute;
+    overflow: hidden;
+}
+.page6 .email img {
+    left: 10px;
+    top: 80px;
+
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+
+/*page 1 responsive------------------------------------- */
+@media all and (max-width: 400px){
+
+    .home .welcome {
+        font-size: 28px;
+        color: white;
+
+    }
+    .home .welcome span:before {
+        content: '';
+        animation: animatewelcome infinite 7s;
+    }
+
+    @keyframes animatewelcome {
+        0% {
+            content: 'Hey! ';
+
+            font-size: 28px;
+        }
+        50% {
+            content: 'Welcome';
+            font-size: 28px;
+        }
+        100% {
+            content: 'Hey! Welcome';
+
+            transition-duration: 0.5s;
+
+        }
+    }
+
+    .home .job {
+        font-size: 30px;
+    }
+    .navbar .menu {
+        display: none;
+    }
+    /*page number 2 respon**********************/
+
+    .info {
+        position: absolute;
+        width: 300px;
+        height: 450px;
+        top: 600px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+
+    }
+    .pic {
+
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        top: 140px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        box-shadow: 0 12px 17px rgba(2,1,2,0.5);
+
+    }
+    .picdet {
+
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+        top: 410px;
+        left: 0;
+        right: 0;
+        border-radius: 20px;
+    }
+    .page2 .picdet h2 {
+        color: gray;
+        align-items: center;
+        padding-left: 30%;
+        margin: 0px;
+        top: 100px;
+    }
+    .page2 .picdet h3 {
+        color: gray;
+        left: 90px;
+        align-items: center;
+        position: absolute;
+        top: 90px;
+    }
+    .page2 .picdet a {
+        position: absolute;
+        color: gray;
+        align-items: center;
+        left: 35%;
+        background: #171717;
+        padding: 10px;
+        border-radius: 50px;
+        top: 30px;
+    }
+    .page2 .picdet h2 {
+        color: gray;
+        align-items: center;
+        padding-left: 32%;
+        margin: 0px;
+        top: 100px;
+    }
+    .info {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 600px;
+        left: 0;
+        font-size: 8px;
+        right: 0;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    }
+    .picdet .social2 {
+        position: absolute;
+        top: 110px;
+        left: 47%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        z-index: 3;
+    }
+    .page2 .info h1 {
+        padding-left: 50%;
+        padding-bottom: 20px;
+        font-size: 20px;
+        color: white;
+    }
+
+    /*page 3 responsive *********************************/
+
+    .page3 {
+        top: 270%;
+        width: 100%;
+        height: 100%;
+        /* background-image: url(../img/Main page img/back new one.png); */
+        position: absolute;
+    }
+    .page3 .page3body {
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 140px;
+        box-shadow: 0 12px 17px rgba(2,0,2,0);
+    /* box-shadow: 0 12px 17px rgb(2 0 2 / 50%); */
+    }
+    .page3 .page3body .other {
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        background: transparent;
+        margin: 0px;
+        /* margin-left: 40px; */
+        box-shadow: 0 12px 17px rgba(2,0,2,0);
+    }
+
+    .page3 .page3body .skill {
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        background: transparent;
+        margin: 20px;
+        /* margin-left: 100px; */
+        right: 0;
+        top: 400px;
+        box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+    }
+    .footer {
+        top: 900px;
+        position: absolute;
+        height: 60px;
+        width: 100%;
+    }
+    .footer .social3 {
+        position: absolute;
+        top: 50px;
+        left: 30%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        z-index: 3;
+    }
+
+    .page4 {
+        top: 450%;
+        width: 100%;
+        height: 100%;
+        /* background-image: url(../img/Main page img/back new one.png); */
+        position: absolute;
+    }
+
+    .edu .uni {
+        height: calc(100%/4);
+        width: 100%;
+        position: absolute;
+        box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+        margin: 20px;
+        border-radius: 12px;
+        background-size: cover;
+    }
+    .edu .course {
+        height: calc(100%/4);
+        width: 100%;
+        top: calc(100%/4);
+        left: 0;
+        position: absolute;
+        box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+        margin: 20px;
+        border-radius: 12px;
+        background-size: cover;
+    }
+    .edu .hight {
+        height: calc(100%/4);
+        width: 100%;
+        bottom: 90px;
+        left: 0;
+        position: absolute;
+        box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+        margin: 20px;
+        background-size: cover;
+    }
+    .edu .primary {
+        height: calc(100%/4);
+        width: 100%;
+        bottom: -50px;
+        left: 0;
+        position: absolute;
+        box-shadow: 0 12px 17px rgba(2,0,2,0.5);
+        margin: 20px;
+        background-size: cover;
+    }
+    .page5 {
+        top: 570%;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        /* background-image: url(../img/Main page img/back new one.png); */
+        position: absolute;
+        overflow: hidden;
+    }
+    .page6 {
+        top: 680%;
+        width: 100%;
+        height: 600px;
+        background: black;
+        position: absolute;
+    }
+    .page6 .call {
+        width: 100%;
+        height: 230px;
+        position: absolute;
+        /* left: 0; */
+        margin: 10px;
+    }
+    .page6 .myname {
+        width: 100%;
+        height: 230px;
+        position: absolute;
+        /* left: calc(100%/4); */
+        /* margin: 10px; */
+        left: 0;
+        top: 380px;
+    }
+    .page6 .myname h1 {
+        left: 50px;
+        top: 20px;
+        color: red;
+        align-items: center;
+        font-size: 24px;
+        position: absolute;
+    }
+    .page6 .myname h2 {
+        left: 105px;
+        top: 70px;
+        color: gray;
+        align-items: center;
+        font-size: 16px;
+        position: absolute;
+    }
+    .page6 .myname img {
+        top: 100px;
+        left: 100px;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+    }
+    .page6 .myname h3 {
+        left: 40px;
+        top: 170px;
+        color: red;
+        align-items: center;
+        font-size: 24px;
+        position: absolute;
+    }
+    .page6 .email {
+        width: 100%;
+        height: 230px;
+        position: absolute;
+        /* right: 0; */
+        top: 200px;
+        margin: 10px;
+    }
+    .page6 .email h2 {
+        left: 110px;
+        top: 130px;
+        color: white;
+        align-items: center;
+        font-size: 22px;
+        position: absolute;
+        font-size: 18px;
+        overflow: hidden;
+    }
+    .page6 .call img {
+        left: 20px;
+        top: 95px;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+    }
+
+    .page6 .email img {
+        left: 40px;
+        top: 90px;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+    }
+
+
+}
+@media all and (max-width: 500px){
+    
+}
